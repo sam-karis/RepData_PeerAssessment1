@@ -143,7 +143,7 @@ abline(v = complete_step_mean, col = "red") # Add  red line which is the mean
 
 Here we create a new factor column of weekday and Weekend      
 ```{r}
-weekends <-  c("Suturday", "Sunday")
+weekends <-  c("Saturday", "Sunday")
 
 complete_df$Day_or_end <- as.factor(ifelse(is.element(weekdays(as.Date(complete_df$date)), weekends),"Weekend", "Weekday"))
 

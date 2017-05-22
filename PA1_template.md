@@ -158,7 +158,7 @@ abline(v = complete_step_mean, col = "red") # Add  red line which is the mean
 Here we create a new factor column of weekday and Weekend      
 
 ```r
-weekends <-  c("Suturday", "Sunday")
+weekends <-  c("Saturday", "Sunday")
 
 complete_df$Day_or_end <- as.factor(ifelse(is.element(weekdays(as.Date(complete_df$date)), weekends),"Weekend", "Weekday"))
 
@@ -185,12 +185,12 @@ head(step_by_interval_factor)
 
 ```
 ##   interval Day_or_end      steps
-## 1        0    Weekday 1.94375222
-## 2        5    Weekday 0.38447846
-## 3       10    Weekday 0.14951940
-## 4       15    Weekday 0.17087932
-## 5       20    Weekday 0.08543966
-## 6       25    Weekday 1.38981844
+## 1        0    Weekday 2.25115304
+## 2        5    Weekday 0.44528302
+## 3       10    Weekday 0.17316562
+## 4       15    Weekday 0.19790356
+## 5       20    Weekday 0.09895178
+## 6       25    Weekday 1.59035639
 ```
 ### plot using Lattice
 
